@@ -12,29 +12,29 @@
 
 ### 安裝 ComfyUI 的基本需求
 
-1. **安裝 Python**  
+**安裝 Python**  
    請下載 Python，如果打算安裝conda，請隨意選擇版本下載，如不使用Conda建議使用 3.10 版本（這是我個人選用的Conda ComfyUI python版本）：
    [Python 下載頁面](https://www.python.org/downloads/release/python-31013/)
 
 ![安裝Python](https://res.cloudinary.com/dev7ziixx/image/upload/v1735550419/%E5%AE%89%E8%A3%9DPython_u8lfdv.png)
 
-1. **安裝 Git**  
+ **安裝 Git**  
    下載並安裝 Git：[Git 官方網站](https://git-scm.com/)
 
 ![安裝Git](https://res.cloudinary.com/dev7ziixx/image/upload/v1735550419/%E5%AE%89%E8%A3%9DGit_bamn8q.png)
 
-1. **建議安裝 Conda**  
+**建議安裝 Conda**  
    Conda 可方便地管理 Python 環境，可以安裝 Miniconda：[Miniconda 官方網站](https://www.anaconda.com/download/success)
 
 ![安裝Conda](https://res.cloudinary.com/dev7ziixx/image/upload/v1735550418/%E5%AE%89%E8%A3%9DConda_oczcdu.png)
 
 ### 安裝 ComfyUI 的具體步驟
 
-1. **啟動終端機（Terminal）**
+**啟動終端機（Terminal）**
 
 ![啟動終端機](https://res.cloudinary.com/dev7ziixx/image/upload/v1735550421/%E5%95%9F%E5%8B%95%E7%B5%82%E7%AB%AF%E6%A9%9F_sbkkvr.png)
 
-1. **如果使用 Conda**  
+**如果使用 Conda**  
    在終端機（Terminal）中輸入以下指令建立新的 Conda 環境：
 
    ```bash
@@ -55,7 +55,7 @@
 
 ![建立新 Conda 環境](https://res.cloudinary.com/dev7ziixx/image/upload/v1735552409/%E5%BB%BA%E7%AB%8B%E6%96%B0Conda%E7%92%B0%E5%A2%83_dbv2a5.png)
 
-1. **安裝 PyTorch**  
+**安裝 PyTorch**  
    根據顯示卡的 CUDA 版本安裝對應的 PyTorch。
 
    - 若你不確定 CUDA 版本，可以向 ChatGPT 詢問，或參考 [PyTorch 官方頁面](https://pytorch.org/get-started/locally/) 確認指令。
@@ -72,7 +72,7 @@
 
 ![安裝 PyTorch](https://res.cloudinary.com/dev7ziixx/image/upload/v1735550420/%E5%AE%89%E8%A3%9DPyTorch_bq1oae.png)
 
-1. **使用 Git 下載 ComfyUI**  
+**使用 Git 下載 ComfyUI**  
    輸入以下指令下載 ComfyUI：
 
    ```bash
@@ -81,7 +81,7 @@
 
 ![Git 下載 ComfyUI](https://res.cloudinary.com/dev7ziixx/image/upload/v1735550418/Git%E4%B8%8B%E8%BC%89ComfyUI_jhursg.png)
 
-1. 在終端機（Terminal）中切換到 ComfyUI 目錄：
+在終端機（Terminal）中切換到 ComfyUI 目錄：
 
    ```bash
    cd ComfyUI
@@ -91,7 +91,7 @@
 
 ![切換到 ComfyUI 目錄](https://res.cloudinary.com/dev7ziixx/image/upload/v1735550419/%E5%88%87%E6%8F%9B%E5%88%B0ComfyUI%E7%9B%AE%E9%8C%84_iddn9q.png)
 
-1. 安裝 ComfyUI 相關程式：
+安裝 ComfyUI 相關程式：
 
    ```bash
    pip install -r requirements.txt
@@ -103,7 +103,7 @@
 
 ## 啟動 ComfyUI
 
-1. 在確認終端機（Terminal）正在ComfyUI的資料夾後，運行 ComfyUI 伺服器：
+在確認終端機（Terminal）正在ComfyUI的資料夾後，運行 ComfyUI 伺服器：
 
    ```bash
    python main.py
@@ -111,7 +111,7 @@
 
 ![運行 ComfyUI 伺服器](https://res.cloudinary.com/dev7ziixx/image/upload/v1735550419/%E9%81%8B%E8%A1%8CComfyUI%E4%BC%BA%E6%9C%8D%E5%99%A8_fanshm.png)
 
-1. 打開瀏覽器（如 Chrome、Safari），在地址欄輸入以下網址：
+打開瀏覽器（如 Chrome、Safari），在地址欄輸入以下網址：
 
    ```
    http://127.0.0.1:8188
@@ -125,23 +125,23 @@
 
 ## 初次運行 ComfyUI
 
-1. **第一次運行**  
+**第一次運行**  
    ComfyUI 啟動後會顯示範例預設設定。點選 **Queue** 即可嘗試運行。
 
 ![第一次運行](https://res.cloudinary.com/dev7ziixx/image/upload/v1735550418/%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%81%8B%E8%A1%8C_o5qa9n.png)
 
-1. **第一個錯誤**  
+**第一個錯誤**  
    如果直接運行出現錯誤，是因為新安裝的 ComfyUI 沒有任何模型，需要手動下載模型。
 
 ![第一個錯誤](https://res.cloudinary.com/dev7ziixx/image/upload/v1735550418/%E7%AC%AC%E4%B8%80%E5%80%8B%E9%8C%AF%E8%AA%A4_edddzd.png)
 
-1. **下載模型**  
+**下載模型**  
    ComfyUI 預設的 checkpoint 名為 `v1-5-pruned-emaonly.ckpt`。可從 [Hugging Face](https://huggingface.co/) 下載：
    [下載連結](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/blob/main/v1-5-pruned-emaonly.ckpt)
 
 ![下載模型](https://res.cloudinary.com/dev7ziixx/image/upload/v1735550417/%E4%B8%8B%E8%BC%89%E6%A8%A1%E5%9E%8B_i5pkjc.png)
 
-1. **放置模型檔案**  
+**放置模型檔案**  
    將 `v1-5-pruned-emaonly.ckpt` 文件放置在 ComfyUI 資料夾的以下路徑：
 
    ```
@@ -152,7 +152,7 @@
 
 ![放置模型檔案](https://res.cloudinary.com/dev7ziixx/image/upload/v1735550422/%E6%94%BE%E7%BD%AE%E6%A8%A1%E5%9E%8B%E6%AA%94%E6%A1%88_zewc9m.png)
 
-1. **重啟 ComfyUI**  
+**重啟 ComfyUI**  
    模型放置好後，重新啟動 ComfyUI：
    - 在終端機（Terminal）中按下 `Ctrl + C` 關閉伺服器。
    - 再次輸入以下指令啟動 ComfyUI：
@@ -163,12 +163,12 @@
 
 ![重啟 ComfyUI](https://res.cloudinary.com/dev7ziixx/image/upload/v1735550420/%E9%87%8D%E5%95%9FComfyUI_yfq60v.png)
 
-1. **選擇模型**  
+**選擇模型**  
    在 ComfyUI 的 checkpoint 選單中，選取剛下載的 `v1-5-pruned-emaonly.ckpt`。
 
 ![選擇模型](https://res.cloudinary.com/dev7ziixx/image/upload/v1735550419/%E9%81%B8%E6%93%87%E6%A8%A1%E5%9E%8B_h5mnne.png)
 
-1. **生成第一張圖片**  
+**生成第一張圖片**  
    點選 **Queue**，即可生成你的第一張圖片！
 
 ![生成第一張圖](https://res.cloudinary.com/dev7ziixx/image/upload/v1735550418/%E7%94%9F%E6%88%90%E7%AC%AC%E4%B8%80%E5%BC%B5%E5%9C%96_ugusbj.png)

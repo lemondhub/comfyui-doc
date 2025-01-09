@@ -10,10 +10,17 @@
 
 ---
 
-### Flux 初探：第一次探索之旅  
-[Flux 初探：第一次探索之旅](comfyui_flux1_first_try.md)  
+### Flux：第一次探索之旅  
+[Flux：第一次探索之旅](comfyui_flux1_first_try.md)  
 
 > 跟隨我一起探索 Flux 的第一步，這是一個充滿未知與驚喜的學習之旅！  
 
 ---
 
+### Flux：補上 AI 圖片的每一筆細節  
+[Flux：補上 AI 圖片的每一筆細節](comfyui_flux1_inpainting.md)  
+> 學習如何使用 Flux 進行圖片修補，讓你的作品更貼近你的創意構想！
+
+--- 
+
+如果有更多需求，也可以告訴我，我幫你微調！
